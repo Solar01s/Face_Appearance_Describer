@@ -25,8 +25,17 @@
 
 # Functionality
 
+## Format
+- a-importance coefficients, correct anwers are pressented in the form of a dictonary.
+
 ## utils.py
 
 ## trainer.py
+### The only thing that's needed here is the **Trainer** class for training the Apperance Describer. Class functions:
+| **Class function** | Keep | **Dependencies** | Process |
+| :--- | :--- | :--- | :--- |
+| __init__ | model, data_loader(PyTorch DataLoader), device, a(importance coefficients for loss), resnet_lr, head_lr, batch_size | - | Sets the configuration of the Trainer class |
+| start | epochs, display, display_in | torch | Starts the model training cycle for "epoch" epochs. If "display" is True, an intermediate training summary is displayed in "in_display" epochs |
+| end | - | torch | Save model to path "trained_ap.pt" and display message to concole |
 
 ## model.py
