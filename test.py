@@ -10,7 +10,7 @@ import utils
 
 describes, sizes = utils.get_default_tasks()
 
-ap = model.ApperanceDescriber(list(sizes))
+ap = model.AppearanceDescriber(list(sizes))
 ap = utils.load_model("trained_ap.pt", ap)
 ap.eval()
 
