@@ -28,7 +28,7 @@ df = utils.FaceDataset("train_table2.csv", transforms)
 dl = DataLoader(batch_size=batch_size, dataset=df, shuffle=True, num_workers=0)
 
 # Подготовка модели и обучателя
-ap = model.ApperanceDescriber(list(sizes)).to(device)
+ap = model.AppearanceDescriber(list(sizes)).to(device)
 train = trainer.Trainer(ap, dl, device, a, resnet_lr, heads_lr, batch_size)
 
 print("Подготовка полностью завершена!\nПереходим к обучению...")
