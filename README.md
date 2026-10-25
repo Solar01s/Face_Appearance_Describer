@@ -47,7 +47,7 @@ Regarding the work, it inherits from the PyTorch Dataset class. In the __getitem
 ## trainer.py
 ### The only thing that's needed here is the **Trainer** class for training the Appearance Describer. Class functions:
 | **Class function** | **Accepts** | **Dependencies** | **Process** | **Returns** |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | __init__ | model, data_loader(PyTorch DataLoader), device, a(importance coefficients for loss), resnet_lr, head_lr, batch_size | - | Sets the configuration of the Trainer class | configurated class Trainer |
 | start | epochs, display, display_in | torch | Starts the model training cycle for "epoch" epochs. If "display" is True, an intermediate training summary is displayed in "in_display" epochs | trained model, list of losses |
 | end | - | torch | Save model to path "trained_ap.pt" and display message to concole | None |
