@@ -55,6 +55,7 @@ Regarding the work, it inherits from the PyTorch Dataset class. In the __getitem
 ## model.py
 ### The AppearenceDescriber class funcions:
 | **Class function** | **Accepts** | **Dependencies** | **Process** | **Returns** |
+| :--- | :--- | :--- | :--- | :--- |
 | __init__ | signs(a list of answer options for each characteristics) | torch, torchvision | Creates a ResNet18, len(signs) linear layers via ModuleList | configurated AppearanceDescriber class |
-| forward, directly | normalize_picture: A tensor of size (3, 224, 224) | torch | It receives from ResNet18, then receives logits from each of the n heads | tuple of logits from n heads |
+| forward, directly | normalize_picture: A tensor of size (3, 224, 224) | torch | It receives from ResNet18, then receives logits from each of the n heads | tuple of logits from n heads|
 | from_file | path (to image), H (height to crop image), W(weight to crp image) | torchvision, torch, Pillow, forward | Using Pillow, it opens the image, transforms it via torchvision.transforms.v2, and uses the forward function to obtian a response from the nueral network. | tuple of logits from n heads |
