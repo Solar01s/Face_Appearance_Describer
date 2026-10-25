@@ -8,7 +8,7 @@
 
 # Used Python programming language and his libraries
 - PyTorch(torch), torchvision: the main libraries for creating and training a model.
-- Pandas: a library that allows you yo work with tables conveniently via code; it was used to create a teble of correct answers(targets) for training.
+- Pandas: a library that allows you to work with tables conveniently via code; it was used to create a teble of correct answers(targets) for training.
 - Customtkinter: a library for creating interfaces (graphical windows). Is used to test the model in a convenient format.
 
 # Modules
