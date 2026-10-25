@@ -1,7 +1,7 @@
 # Useful extract
 
 ## Characteristics
-- Apperance Describer is an artifical intellegence model built on the **ResNet18 (CNN) architecture and linear layers**.
+- Appearance Describer is an artifical intellegence model built on the **ResNet18 (CNN) architecture and linear layers**.
 - The accuracy on the training data was **98%**. On the new data, as expected, it was **80%**.
 - The model was trained on a **GPU T4 for 5 minutes**, which amounted to **280 epochs**.
 - The model's loss decreased by **0.32, i.e., 0.06 per head**.
@@ -31,7 +31,7 @@
 ## utils.py
 
 ## trainer.py
-### The only thing that's needed here is the **Trainer** class for training the Apperance Describer. Class functions:
+### The only thing that's needed here is the **Trainer** class for training the Appearance Describer. Class functions:
 | **Class function** | Keep | **Dependencies** | Process |
 | :--- | :--- | :--- | :--- |
 | __init__ | model, data_loader(PyTorch DataLoader), device, a(importance coefficients for loss), resnet_lr, head_lr, batch_size | - | Sets the configuration of the Trainer class |
