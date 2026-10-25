@@ -6,7 +6,7 @@ import utils
 
 from PIL import Image
 
-class ApperanceDescriber(nn.Module):
+class AppearanceDescriber(nn.Module):
     def __init__(self, signs: list):
 
         """
