@@ -2,7 +2,7 @@
 
 ## Characteristics
 - Appearance Describer is an artifical intellegence model built on the **ResNet18 (CNN) architecture and linear layers**.
-- The accuracy on the training data was **98%**. On the new data, as expected, it was **80%**.
+- The accuracy on the training data was **98%**. On the new data, as expected, it was **60%**.
 - The model was trained on a **GPU T4 for 5 minutes**, which amounted to **280 epochs**.
 - The model's loss decreased by **0.32, i.e., 0.06 per head**.
 
